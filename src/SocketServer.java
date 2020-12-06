@@ -112,7 +112,7 @@ public class SocketServer {
             try {
                 if (currentNum < ThreadNums) {
                     //Listens for a connection to be made to this socket and accepts it.
-                    //The method blocks until a connection is made.
+                    //The method is blocked until a connection is made.
                     Socket socket = serverSocket.accept();
                     currentNum++;
                     System.out.println("Client connected : " + socket.toString());
